@@ -1,0 +1,162 @@
+body {margin: 0;padding: 0;font-family: sans-serif;}
+.head{
+    box-sizing: content-box;
+    
+    background-image: linear-gradient(-90deg,  rgb(22, 21, 21),rgb(0, 0, 0));
+    width: 100%;
+    height: 300px;
+    border-bottom: none;
+    overflow: hidden;
+}
+.head img{
+    display: block;
+    width:300px;
+      
+ }
+.head h1{
+    display:block;
+    position: absolute;
+margin-top: -210px;
+    margin-bottom: 0;
+    margin-left: 350px;
+    font-size:50px;
+    color:white;
+} 
+
+.logo{
+    display: box;
+
+}
+.menu {
+    margin-top:0;
+    width:100%;
+    height: 165px;
+    background-color: #333;
+    box-sizing: content-box;
+    border: 1px solid black;
+}
+
+.menu h2{
+    font-size: 40px;
+    color:white;
+}
+.menu h3{
+display: block;
+position: relative;
+margin-top: -80px;
+margin-left:750px;
+padding-right: 0;
+font-size: 30px;
+color:white;
+background-color: blue;
+border:3px solid white;
+text-align: center;
+width: 20%;
+height: 40px;
+}
+.menu h3:hover{
+    border: none;
+    text-shadow:0 0 4px;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-top:40px;
+}
+.menu ul li{
+    float: left;
+ 
+   
+}
+.menu ul #p5{
+    right: 40;
+}
+.menu li a{
+    display: inline-block;
+    color:white;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 30px;
+
+}
+li a:hover {
+    background-color:blue;
+}
+
+.active {
+    background-color: red;
+}
+.footer{
+    box-sizing: content-box;
+    
+    background-image: linear-gradient(-90deg,  rgb(22, 21, 21),rgb(0, 0, 0));
+    width: 100%;
+    height: 150px;
+    border-bottom: none;
+    overflow: hidden;
+}
+/* .menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+ .menu ul li {
+    list-style: none;
+  }
+ .menu ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: #aaa;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+ .menu ul li a::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    transition: 0.5s;
+  }
+ .menu ul li a:hover {
+    color: #fff;
+  }
+ .menu ul li a:hover::before {
+    animation: animate .5s linear forwards; 
+  } */
+  
+  @keyframes animate {
+    0% {
+      top: calc(50% - 2px);
+      left: -100%;
+      height: 4px;
+      z-index: 1;
+    }
+    50% {
+      top: calc(50% - 2px);
+      left: 0;
+      height: 4px;
+      z-index: 1;
+    }
+    100% {
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
