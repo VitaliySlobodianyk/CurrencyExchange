@@ -20,6 +20,7 @@
 
 
 <link rel="stylesheet" href="Style/main_style.css">
+<link rel="stylesheet" href="Style/news_page.css">
 </head>
 <body>
     <div class="head">
@@ -78,7 +79,7 @@
            
            newsfeed1.displayoptions("datetime snippet") //show the specified additional fields
            
-           newsfeed1.setentrycontainer("div", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
+           newsfeed1.setentrycontainer("p", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
            
            newsfeed1.filterfeed(10, "date") //Show 8 entries, sort by date
            
@@ -105,7 +106,7 @@
            
            newsfeed.displayoptions("datetime snippet") //show the specified additional fields
            
-           newsfeed.setentrycontainer("div", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
+           newsfeed.setentrycontainer("p", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
            
            newsfeed.filterfeed(10, "date") //Show 8 entries, sort by date
            
