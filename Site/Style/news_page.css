@@ -24,12 +24,13 @@
     width:70%;
     margin-bottom:30px;
     margin-left: 40px;
-    border: 4px dotted blue;
-    background-color: grey;
+    border: 4px dotted black;
+    background-color:rgba(128, 128, 128, 0.445);
    }
 
-   .NBU div>p:hover{
-       color: rgba(0, 255, 255, 0.438);
+   .NBU div>p:hover, .MINFIN div>p:hover{
+       color: rgba(163, 123, 14, 0.438);
+       text-decoration:underline;
    }
    .NBU h3, .MINFIN h3{
     font-size: 30px;   
