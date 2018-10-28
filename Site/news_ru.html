@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C_Ex news</title>
+
+    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+
+<script type="text/javascript" src="Backend\gfeedfetcher.js">
+
+/***********************************************
+* gAjax RSS Feeds Displayer- (c) Dynamic Drive (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+
+<link rel="stylesheet" href="Style/main_style.css">
+<link rel="stylesheet" href="Style/news_page.css">
+</head>
+<body>
+    <div class="head">
+        <img src="Design\logo.png" alt="logo" id="logo" > 
+        <h1 id="name">Currency Exchange Website</h1>
+        <ul class="versions">
+                <li id="en"><a href="news_en.html">English version</a></li>
+                <li id="ru"><a href="news_ru.html">Русская версия</a></li>
+                <li id="ua"><a href="news_ua.html">Українська версія</a></li>
+              </ul> 
+        </div>
+        <div class="menu container topBotomBordersOut">
+        <nav>
+              
+                  <h2 id="wnav">Навигация по сайту</h2>
+                  <h3>Новости</h3>
+              <ul class="pages">
+                  
+                  <li id="p2">
+                      <a href="CurrencyExchange_ru.html">Главная страница</a>
+                      
+                  </li>
+                  <li id="p3">
+                        <a href="table_ru.html">Курсы валют </a>
+                  </li>
+                  <li id="p4">
+                        <a href="calculator_ru.html">Калькулятор валют</a>
+                  </li>
+                  <li id="p5">
+                        <a href="about_us_ru.html">О нас</a>
+                  </li>
+              </ul>
+             </nav>
+      </div>
+    
+    
+    
+    
+    <h1>Главные новости на сегодня</h1>
+   <p>           </p> <!-- Опис  розділу   -->
+ 
+  <div>
+   <h2></h2>
+   
+   <a href=""><img src="" alt=""></a>   <!-- Логотип  НБУ    -->
+
+  </div>
+    <div class="news">
+ 
+    
+        <div  class="NBU">
+            
+           
+            <h3>Последние новости <a href="" title="">НБУ</a> </h3>
+       
+           <script type="text/javascript">
+           
+           var newsfeed1=new gfeedfetcher("example1", "example1class", "_new")
+           
+           newsfeed1.addFeed("NBU", "https://bank.gov.ua/rss?language=uk") //Specify "label" plus URL to RSS feed
+           
+           newsfeed1.displayoptions("datetime snippet") //show the specified additional fields
+           
+           newsfeed1.setentrycontainer("p", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
+           
+           newsfeed1.filterfeed(10, "date") //Show 8 entries, sort by date
+           
+           newsfeed1.init() //Always call this last  
+           
+           </script>
+       
+         
+       
+        </div>
+
+        <div  class="MINFIN">
+            
+           
+       
+           <script type="text/javascript">
+           
+           var newsfeed=new gfeedfetcher("example2", "example2class", "_new2")
+           
+            //Specify "label" plus URL to RSS feed
+           
+           newsfeed.addFeed("Minfin","https://minfin.com.ua/ua/data/rss/news.xml")
+           
+           newsfeed.displayoptions("datetime snippet") //show the specified additional fields
+           
+           newsfeed.setentrycontainer("p", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
+           
+           newsfeed.filterfeed(10, "date") //Show 8 entries, sort by date
+           
+           newsfeed.init() //Always call this last  
+           
+           </script>
+        </div>
+       
+     </div> 
+
+
+     <div class="footer">
+               
+           <footer>
+               
+           </footer>
+
+
+     </div>
+       
+           
+        
+</body>
+</html>

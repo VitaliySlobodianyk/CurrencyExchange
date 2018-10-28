@@ -2,6 +2,7 @@
 {
     padding-left: 50px;
 }
+
 .charact
 {
     font-size: x-large;
@@ -74,6 +75,37 @@ margin-top: -210px;
     font-size:50px;
     color:white;
 } 
+
+.head ul{
+ position:absolute;
+  list-style-type: none;
+   padding:50px;
+   margin-left: 55%;
+   margin-top:-330px;
+  overflow: hidden;
+  color:white;
+ 
+  display: block;
+}
+.head li{
+  float: right;
+  margin-right:40px;
+ 
+}
+.head li a{
+ display: inline-block;
+ color:white;
+
+}
+.head #ru::before{
+content: "";
+}
+.head #ua:before{
+content: "";
+}
+.head #us:before{
+content:" ";
+}
 
 .logo{
     display: box;

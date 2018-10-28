@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C_Ex Calculator</title>
+    <link rel="stylesheet" href="Style/main_style.css">
+</head>
+<body>
+    <div class="head">
+      <img src="Design\logo.png" alt="logo" id="logo" > 
+      <h1 id="name">Currency Exchange Website</h1>
+      <ul class="versions">
+          <li id="en"><a href="calcualtor_en.html">English version</a></li>
+          <li id="ru"><a href="calculator_ru.html">Русская версия</a></li>
+          <li id="ua"><a href="calculator_ua.html">Українська версія</a></li>
+        </ul> 
+        </div>
+        <div class="menu container topBotomBordersOut">
+        <nav>
+              
+                  <h2 id="wnav">Навігація по сайту</h2>
+                  <h3>Калькулятор</h3>
+              <ul class="pages">
+                <li id="p1">
+                    <a href="CurrencyExchange_ua.html">Головна сторінка</a>  
+                  
+                  <li id="p2">
+                      <a href="news_ua.html">Новини</a>
+                      
+                  </li>
+                
+                  <li id="p3">
+                        <a href="table_ua.html">Курси валют</a>
+                  </li>
+                  <li id="p4">
+                        <a href="about_us_ua.html">Про нас</a>
+                  </li>
+              </ul>
+             </nav>
+      </div>
+
+      <main>
+        <div class="container">
+          <div class="row vdivide">
+            <div class="col-5">
+              <form id="calculatorForm" action="#" method="post">
+                <label for="chooseCurrency">Оберіть валюту:</label>
+                <select class="btn" id="currencySelect" name="currency">
+                  <!-- Currencies options -->
+                </select>
+                <hr/>
+                <span>На яку хочете здійснити обмін?</span>
+                  <label for="bid">Пропозиція</label>
+                  <input type="radio" name="bidAsk" value="bid">
+                  <label for="ask">Попит</label>
+                  <input type="radio" name="bidAsk" value="ask">
+                  <hr/>
+                  <button id="check" class="btn" type="submit">Перевірити ціну</button>
+              </form>
+            </div>
+            <div id="calculator" class="col-7">
+              <p><b>Калькулятор</b></p>
+              <hr/>
+              <div class="inserted-currency">Обрана вами валюта</div>
+              <form id="calculator" action="#" method="post">
+                <label for="chooseAmount">Оберіть суму валюти:</label>
+                <input type="text" name="amount" value="" >
+                <hr/>
+                <button id="exchange" class="btn" type="submit">Обмін</button>
+              </form>
+            </div>
+          </div>
+          <div style="display: none" class="row secondrow">
+            <div class="col">
+              <table style="display: none" id="bidTable" class="table table-hover table-responsive hidden-table">
+                <thead>
+                  <tr>
+                    <th>Продано</th>
+                    <th>Кількість</th>
+                    <th>UAH</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Bid table -->
+                </tbody>
+              </table>
+            </div>
+            <div class="col">
+              <table style="display: none" id="askTable" class="table table-hover table-responsive hidden-table">
+                <thead>
+                  <tr>
+                    <th>Придбано</th>
+                    <th>Кількість</th>
+                    <th>UAH</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Bid table -->
+                </tbody>
+              </table>
+            </div>
+            <div class="text-center">
+              <button id="sum" class="btn" type="submit">Сума</button>
+            </div>
+            <div id="divSum" class="text-center">
+              <div class="total">
+                Ваша загальна сума буде тут
+              </div>
+            </div>
+          </div>
+          <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong></strong>
+          </div>
+        </div>
+      </main>
+      <div class="footer">
+        <footer></footer>
+    </div>
+</body>
+</html>
