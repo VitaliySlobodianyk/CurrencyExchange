@@ -1,0 +1,41 @@
+.c_body{
+    position: absolute;
+    box-sizing: content-box;
+    width: 70%;
+    height: 60%;
+    background-color: lightslategray;
+    margin-left: 70px;
+    margin-top: 70px;
+    box-shadow: 3px 3px 3px black;
+}
+.body{
+    height: 1000px;
+    background-color: rgba(54, 53, 53, 0.185);
+    margin-top:0;
+    box-sizing: content-box;
+}
+.col-5 h1{
+    text-align: center;
+}
+.col-5 {
+    margin-left: 40px;
+    padding-right: 40px;
+}
+#currencySelect{
+    width: 70px;
+    height:30px;
+    margin-left: 40px;
+    background-color: rgba(107, 99, 99, 0.267);
+    color:whitesmoke;
+    text-shadow: 1px -1px black;
+}
+.btn option{
+    color: black;
+    text-shadow: 1px -1px black;
+    text-align:center;
+    padding-left: 15px
+}
+.col-5 label[for="chooseCurrency"]{
+      font-size: 30px;
+      text-transform: capitalize;
+}

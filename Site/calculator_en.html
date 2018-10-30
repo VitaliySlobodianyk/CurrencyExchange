@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>C_Ex Calculator</title>
     <link rel="stylesheet" href="Style/main_style.css">
+    <link rel="stylesheet" href="Style\calculator_page.css">
 </head>
 <body>
     <div class="head">
@@ -43,16 +44,49 @@
       </div>
 
       <main>
-        <div class="container">
+        <div class="body">
+        <div class="c_body">
           <div class="row vdivide">
             <div class="col-5">
+                 <h1>Currency Exchange calculator</h1>
               <form id="calculatorForm" action="#" method="post">
                 <label for="chooseCurrency">Choose Your currency:</label>
                 <select class="btn" id="currencySelect" name="currency">
                   <!-- Currencies options -->
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="UAN">UAN</option>
+                  <option value="RUB">RUB</option>
+                  <option value="PLN">PLN</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
                 </select>
+                <span>Into</span>
+                  <select class="btn" id="currencySelect" name="currency">
+                      <!-- Currencies options -->
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="UAN">UAN</option>
+                      <option value="RUB">RUB</option>
+                      <option value="PLN">PLN</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                  </select>
+
                 <hr/>
-                <span>Which one You want?</span>
+                <span>Which one You want to  get?</span>
                   <label for="bid">Bid</label>
                   <input type="radio" name="bidAsk" value="bid">
                   <label for="ask">Ask</label>
@@ -118,6 +152,7 @@
             <strong></strong>
           </div>
         </div>
+      </div>
       </main>
       <div class="footer">
         <footer></footer>
