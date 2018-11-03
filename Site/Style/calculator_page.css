@@ -2,7 +2,7 @@
     position: absolute;
     box-sizing: content-box;
     width: 70%;
-    height: 60%;
+    height: 70%;
     background-color: lightslategray;
     margin-left: 70px;
     margin-top: 70px;
@@ -21,13 +21,20 @@
     margin-left: 40px;
     padding-right: 40px;
 }
-#currencySelect{
+#calculatorForm{
+    margin-top:50px;
+}
+
+#currencySelect1,
+#currencySelect2
+{
     width: 70px;
     height:30px;
     margin-left: 40px;
     background-color: rgba(107, 99, 99, 0.267);
     color:whitesmoke;
     text-shadow: 1px -1px black;
+    cursor: pointer;
 }
 .btn option{
     color: black;
@@ -35,7 +42,143 @@
     text-align:center;
     padding-left: 15px
 }
+
 .col-5 label[for="chooseCurrency"]{
       font-size: 30px;
       text-transform: capitalize;
+}
+#into{
+   display: inline-block;
+   position: absolute;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: initial;
+   font-size: 25px;
+    margin-left:40px;
+    border: 0px 4px 0px 4px;
+    border-style: groove  none;
+    border-color:blue transparent;
+    margin-top: -30px;
+}
+#swap{
+     display: inline-block;
+     margin-left: 50px;
+
+}
+
+.alert{
+    display: none;
+}
+#swap{
+    margin-left: 42px;
+    text-align: center;
+    display: inline-block;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    width: 40px;
+    padding-right: 4px;
+    background-color: lightcyan;
+
+}
+#currencySelect2{
+    margin-left: 50px;
+}
+#which{
+    margin-left: 300px;
+    font-size: 25px; 
+    text-decoration: underline;
+
+}
+input[name="bidAsk"]
+{
+    display: none;
+}
+.bidask{
+    display:inline-block;
+   
+    width:50px;
+    height:25px;
+
+    margin-left: 40px;
+
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+
+    border:3px solid black;
+    box-shadow: 3px 2px black;
+    text-shadow: -3px -3px 2px blue;
+    background-color: whitesmoke;
+    
+
+
+}
+#bid:checked ~ label[for="bid"],
+#ask:checked ~ label[for="ask"]
+{
+ background-color:blue;
+ color:white;
+}
+
+#chk_price{
+     display: inline-block;
+     margin-left:77%;
+     margin-top: 30px;
+     height: 40px;
+     font-size: 20px;
+     text-decoration: blue underline;
+     text-decoration-skip-ink: none;
+     background-color: lightcyan;
+     box-shadow: 4px 4px 3px darkgrey;
+     box-shadow: -4px -4px 3px darkgrey;
+}
+
+.inserted-currency{
+    margin-left:40px;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+#calculator{
+  display:block;
+    
+}
+#choose{
+    margin-left: 40%;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+#amount,#res{
+    height: 20px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#res{
+    margin-left: 15px;
+}
+#res_sp{
+    font-size: 20px;
+    margin-left:20px;
+    font-weight: bold;
+
+}
+.form_reset{
+   display: inline-block;
+   position:absolute;
+   margin-left: 330px;
+   margin-top:45px;
+    width:70px;
+    height: 40px;
+    background-color: lightcyan;
+}
+.Ex_btn{
+    display: inline-block;
+    margin-top:5px;
+    width:150px;
+    margin-left: 430px;
+   height: 80px;
+   position:absolute;
+   background-color:orangered;
 }

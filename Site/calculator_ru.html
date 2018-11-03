@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>C_Ex Calculator</title>
     <link rel="stylesheet" href="Style/main_style.css">
+    <link rel="stylesheet" href="Style\calculator_page.css">
 </head>
 <body>
     <div class="head">
@@ -42,43 +43,89 @@
       </div>
 
       <main>
-        <div class="container">
+        <div class="body">
+        <div class="c_body">
           <div class="row vdivide">
             <div class="col-5">
+                 <h1>Currency Exchange calculator</h1>
               <form id="calculatorForm" action="#" method="post">
-                <label for="chooseCurrency">Выберите вашу валюту:</label>
-                <select class="btn" id="currencySelect" name="currency">
+                <label for="chooseCurrency">Choose Your currency:</label>
+                <select class="btn" id="currencySelect1" name="currency">
                   <!-- Currencies options -->
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="UAN">UAN</option>
+                  <option value="RUB">RUB</option>
+                  <option value="PLN">PLN</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
                 </select>
+                <span id="into">Into</span>
+                <input type="button" value="⇆" id="swap" onclick="" >
+                  <select class="btn" id="currencySelect2" name="currency">
+                      <!-- Currencies options -->
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="UAN">UAN</option>
+                      <option value="RUB">RUB</option>
+                      <option value="PLN">PLN</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                  </select>
+
                 <hr/>
-                <span>Какую из них вы хотите?</span>
-                  <label for="bid">Предложение</label>
-                  <input type="radio" name="bidAsk" value="bid">
-                  <label for="ask">Спрос</label>
-                  <input type="radio" name="bidAsk" value="ask">
-                  <hr/>
-                  <button id="check" class="btn" type="submit">Проверить цену</button>
+                <span id="which">Which one You want to  get?</span>
+                  
+                  <input type="radio" name="bidAsk" value="bid" id="bid">
+                  <label for="bid" class="bidask">Bid</label>
+                  
+                  <input type="radio" name="bidAsk" value="ask" id="ask">
+                  <label for="ask" class="bidask">Ask</label>
+                  
+                 
+                  <input type="button" value="Check the price" class="btn" id="chk_price">
               </form>
             </div>
             <div id="calculator" class="col-7">
-              <p><b>Калькулятор</b></p>
+              
               <hr/>
-              <div class="inserted-currency">Выбранная вами валюта</div>
-              <form id="calculator" action="#" method="post">
-                <label for="chooseAmount">Выберите сумму валюты:</label>
-                <input type="text" name="amount" value="" >
+              <div class="inserted-currency">Your chosen currency:</div>
+              <form id="calculator" action="#" method="post" >
+                
+                <label for="chooseAmount" id="choose">Choose the amount of currency:</label>
+                <input type="number" min="0" step="1" name="amount" value=""  id="amount">
                 <hr/>
-                <button id="exchange" class="btn" type="submit">Обмен</button>
+
+                <output>
+                   <span id="res_sp">Your result:</span>  
+                  <input type="text" name="result" value="" placeholder="Your result" id="res" >
+                </output>
+                <!-- <button id="exchange" class="btn" type="submit">Exchange</button> -->
+               <input type="reset" value="Reset" class="form_reset">
+                <input type="submit" value="Exchange" class="Ex_btn" >
               </form>
             </div>
           </div>
-          <div style="display: none" class="row secondrow">
+
+          <div style="display:none" class="row secondrow">
             <div class="col">
               <table style="display: none" id="bidTable" class="table table-hover table-responsive hidden-table">
                 <thead>
                   <tr>
-                    <th>Продано</th>
-                    <th>Количество</th>
+                    <th>Sold</th>
+                    <th>Amount</th>
                     <th>UAH</th>
                     <th></th>
                   </tr>
@@ -92,8 +139,8 @@
               <table style="display: none" id="askTable" class="table table-hover table-responsive hidden-table">
                 <thead>
                   <tr>
-                    <th>Куплено</th>
-                    <th>Количество</th>
+                    <th>Bought</th>
+                    <th>Amount</th>
                     <th>UAH</th>
                     <th></th>
                   </tr>
@@ -104,19 +151,21 @@
               </table>
             </div>
             <div class="text-center">
-              <button id="sum" class="btn" type="submit">Сумма</button>
+              <button id="sum" class="btn" type="submit">Sum</button>
             </div>
             <div id="divSum" class="text-center">
               <div class="total">
-                Ваша общая сумма будет здесь
+                Your total sum will be here
               </div>
             </div>
           </div>
+
           <div class="alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             <strong></strong>
           </div>
         </div>
+      </div>
       </main>
       <div class="footer">
         <footer></footer>

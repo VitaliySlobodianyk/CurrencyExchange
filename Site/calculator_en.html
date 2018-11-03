@@ -51,7 +51,7 @@
                  <h1>Currency Exchange calculator</h1>
               <form id="calculatorForm" action="#" method="post">
                 <label for="chooseCurrency">Choose Your currency:</label>
-                <select class="btn" id="currencySelect" name="currency">
+                <select class="btn" id="currencySelect1" name="currency">
                   <!-- Currencies options -->
                   <option value="USD">USD</option>
                   <option value="EUR">EUR</option>
@@ -67,8 +67,9 @@
                   <option value=""></option>
                   <option value=""></option>
                 </select>
-                <span>Into</span>
-                  <select class="btn" id="currencySelect" name="currency">
+                <span id="into">Into</span>
+                <input type="button" value="⇆" id="swap" onclick="" >
+                  <select class="btn" id="currencySelect2" name="currency">
                       <!-- Currencies options -->
                       <option value="USD">USD</option>
                       <option value="EUR">EUR</option>
@@ -86,28 +87,40 @@
                   </select>
 
                 <hr/>
-                <span>Which one You want to  get?</span>
-                  <label for="bid">Bid</label>
-                  <input type="radio" name="bidAsk" value="bid">
-                  <label for="ask">Ask</label>
-                  <input type="radio" name="bidAsk" value="ask">
-                  <hr/>
-                  <button id="check" class="btn" type="submit">Check the price</button>
+                <span id="which">Which one You want to  get?</span>
+                  
+                  <input type="radio" name="bidAsk" value="bid" id="bid">
+                  <label for="bid" class="bidask">Bid</label>
+                  
+                  <input type="radio" name="bidAsk" value="ask" id="ask">
+                  <label for="ask" class="bidask">Ask</label>
+                  
+                 
+                  <input type="button" value="Check the price" class="btn" id="chk_price">
               </form>
             </div>
             <div id="calculator" class="col-7">
-              <p><b>Calculator</b></p>
+              
               <hr/>
-              <div class="inserted-currency">Your chosen currency</div>
-              <form id="calculator" action="#" method="post">
-                <label for="chooseAmount">Choose the amount of currency:</label>
-                <input type="text" name="amount" value="" >
+              <div class="inserted-currency">Your chosen currency:</div>
+              <form id="calculator" action="#" method="post" >
+                
+                <label for="chooseAmount" id="choose">Choose the amount of currency:</label>
+                <input type="number" min="0" step="1" name="amount" value=""  id="amount">
                 <hr/>
-                <button id="exchange" class="btn" type="submit">Exchange</button>
+
+                <output>
+                   <span id="res_sp">Your result:</span>  
+                  <input type="text" name="result" value="" placeholder="Your result" id="res" >
+                </output>
+                <!-- <button id="exchange" class="btn" type="submit">Exchange</button> -->
+               <input type="reset" value="Reset" class="form_reset">
+                <input type="submit" value="Exchange" class="Ex_btn" >
               </form>
             </div>
           </div>
-          <div style="display: none" class="row secondrow">
+
+          <div style="display:none" class="row secondrow">
             <div class="col">
               <table style="display: none" id="bidTable" class="table table-hover table-responsive hidden-table">
                 <thead>
@@ -147,6 +160,7 @@
               </div>
             </div>
           </div>
+
           <div class="alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             <strong></strong>
