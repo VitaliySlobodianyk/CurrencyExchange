@@ -271,7 +271,8 @@ height: 40px;
     background-color: red;
 }
 .footer{
-    box-sizing: content-box;
+    
+   box-sizing: content-box;
     color:white;
     background-image: linear-gradient(-90deg,  rgb(22, 21, 21),rgb(0, 0, 0));
     width: 100%;
@@ -304,7 +305,7 @@ footer span{
   display: inline;
   font-size: 20px;
 }
-.info{
+.info_f{
   position:absolute;
   font-style: italic;
   margin-top:130px;
@@ -312,7 +313,7 @@ footer span{
   font-size: 10px;
   letter-spacing: 2px;
 }
-.info span::after{
+.info_f span::after{
   content:"\00A9";
 }
 
