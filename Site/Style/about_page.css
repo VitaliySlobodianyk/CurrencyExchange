@@ -7,9 +7,10 @@
 /* LIST #8 */
 #list8
 {
-	margin-left: 500px;
+    margin: 0 auto;	
 }
-#list8 ul { list-style:none;}
+
+#list8 ul { list-style:none; display: table; margin: 0 auto;}
 #list8 ul li { font-family:Georgia,serif,Times; font-size:18px; }
 #list8 ul li a { display:block; width:300px; height:28px; background-color:#333; border-left:5px solid #222; border-right:5px solid #222; padding-left:10px;
   text-decoration:none; color:#bfe1f1; }
