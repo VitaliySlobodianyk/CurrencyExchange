@@ -91,18 +91,20 @@ body {margin: 0;padding: 0;font-family: sans-serif;}
     overflow: hidden;
 }
 .head img{
-    display: block;
-    width:300px;
+   
+    width:400px;  
+    padding: 20px
       
  }
 .head h1{
     display:block;
     position: absolute;
-margin-top: -210px;
+    margin-top: -210px;
     margin-bottom: 0;
-    margin-left: 350px;
+    margin-left: 550px;
     font-size:50px;
     color:white;
+   
 } 
 
 .head ul{
@@ -236,6 +238,7 @@ ul {
 li {
   display: block;
   margin: 10px 0 0 0;
+  
 }
 .scale {
   transform: scale(1.2);
@@ -250,19 +253,17 @@ li {
     font-size: 40px;
     color:white;
 }
-.menu h3{
-display: block;
-position: relative;
-margin-top: -80px;
-margin-left:750px;
-padding-right: 0;
-font-size: 30px;
-color:white;
-background-color: orange;
-border:3px solid #C8FE2E;
-text-align: center;
-width: 20%;
-height: 40px;
+.menu h3{display: block;
+  position: relative;
+  margin-top: -80px;
+  margin-left:750px;
+  padding-right: 0;
+  font-size: 30px;
+  color:white;
+  background-color: orange;
+  text-align: center;
+  width: 20%;
+  height: 40px;
 }
 .menu h3:hover{
     border: none;
@@ -407,4 +408,10 @@ footer span{
       z-index: -1;
     }
   }
+ .features1 li {
+  display: block;
+  margin: 10px 0 0 0;
+  padding-left: 25px;
+ }
+
 
