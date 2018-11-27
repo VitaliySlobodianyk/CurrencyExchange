@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>C_Ex Rates</title>
     <link rel="stylesheet" href="Style/main_style.css">
+    <link rel="stylesheet" href="Style/rates_page.css">
 </head>
 <body>
     <div class="head">
@@ -53,39 +54,112 @@
       </div>
       
       <main>
-           <table class="table_dark">
-  <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Offer</th>
-    <th>Demand</th>
-    </tr>
-  <tr>
-    <td>1</td>
-    <td>20.3</td>
-    <td>30.5</td>
-    <td>23.5</td>
-    </tr>
-  <tr>
-    <td>2</td>
-    <td>50.2</td>
-    <td>40.63</td>
-    <td>45.23</td>
-    </tr>
-  <tr>
-    <td>3</td>
-    <td>25.4</td>
-    <td>30.2</td>
-    <td>33.3</td>
-    </tr>
-  <tr>
-    <td>4</td>
-    <td>20.4</td>
-    <td>15.6</td>
-    <td>22.3</td>
-    </tr>
-  </table>
-          </main>
+       
+       <div class="btc">  
+        Bitcoin Price for today =
+        <span id="bitcoin-price"></span> &nbsp;
+        <span id="bitcoin-price_ua"></span>
+       </div>
+       
+       
+        <script src="currency-exchange-rates-front-master\dependencies/jquery-3.1.1/js/jquery-3.1.1.min.js"></script>
+        <script src="currency-exchange-rates-front-master\dependencies/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="currency-exchange-rates-front-master\dependencies/accounting-js-open-exchange-rates/accounting.min.js"></script>
+        <script src="currency-exchange-rates-front-master\js\main.js"></script>
+      
+       
+      
+        <!-- START MAIN HEADER & LOADING ICON -->
+        <header id="main-header" class="center">
+          <h1>Currency Converter and Cross-Rate Tables</h1>
+        </header>
+        <section class="loading center">
+          <i class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+          <h4>Loading...</h4>
+        </section>
+        <!-- END MAIN HEADER & LOADING ICON -->
+        <!-- START CONVERTER SECTION -->
+        <section class="converter center">
+          <header>
+            <h2>Convert a currency</h2>
+          </header>
+          <form action="">
+            <label for="from-currency-amount">Convert from</label>
+      
+            <div>
+              <input class="form-in inline-md center" type="text" id="from-currency-amount" placeholder="1 000.00" tabindex="1" />
+              <div class="styled-select inline-md">
+                <select id="from-currency" class="currencylist" tabindex="2">
+                </select>
+              </div>
+            </div>
+      
+            <label for="to-currency">into</label>
+      
+            <div>
+              <input class="form-in inline-md center" type="text" id="answer-currency-amount" placeholder="1 000.00" tabindex="5" />
+              <div class="styled-select inline-md">
+                <select id="to-currency" class="currencylist" tabindex="3">
+              </select>
+              </div>
+            </div>
+            <button id="convert-btn" class="form-btn" tabindex="4">Convert</button>
+      
+          </form>
+        </section>
+        <!-- END CONVERTER SECTION -->
+        <!-- START CROSS RATES SECTION -->
+        <section class="crossrates center">
+          <header>
+            <h2>Generate a cross-rate table</h2>
+          </header>
+          <form action="">
+            <div class="clearfix columns">
+              <div class="first-column">
+                <label for="base-currencies">Base currencies (columns)</label>
+                <div class="multiple-select">
+                  <select multiple id="base-currencies" class="currencylist" tabindex="6">
+                  </select>
+                </div>
+                <footer class="multiple-select-instr">
+                  Hold Ctrl to select multiple currencies.
+                </footer>
+              </div>
+      
+              <div class="second-column">
+                <label for="pair-currencies">Pair currencies (rows)</label>
+                <div class="multiple-select">
+                  <select multiple id="pair-currencies" class="currencylist" tabindex="7">
+                  </select>
+                </div>
+                <footer class="multiple-select-instr">
+                  Hold Ctrl to select multiple currencies.
+                </footer>
+              </div>
+            </div>
+            <button id="table-btn" class="form-btn" tabindex="8">Open table</button>
+      
+          </form>
+          <!-- <p>
+            You can also access the cross-rate table directly using the following url format:<br />
+            <a href="https://arnoldson.online/projects/currency/cross-rates.html?base=USD,GBP&pair=EUR,CHF,JPY,RUB" tabindex="9">https://arnoldson.online/projects/currency/cross-rate.html?base=USD,GBP&pair=EUR,CHF,JPY,RUB</a><br />
+            Just replace the currency codes with a coma seperated list of your choice for base and pair currencies.
+          </p> -->
+        </section>
+        <!-- END CROSS RATES SECTION -->
+        <!-- START FOOTER -->
+        <footer id="main-footer">
+          <p>
+          
+          </p>
+          <p>
+            Powered by <a href="https://www.coinbase.com" target="_blank">Coinbase</a> and <a href="https://www.ipinfo.io" target="_blank">IPinfo.io</a>
+          </p>
+          <p>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><i class="fa fa-creative-commons fa-1" aria-hidden="true"></i></a> 
+          </p>
+        </footer>
+        <!-- END FOOTER -->
 
 
           <div class="footer">

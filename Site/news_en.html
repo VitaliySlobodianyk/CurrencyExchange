@@ -79,7 +79,29 @@
 
   </div>
     <div class="news">
- 
+            <div  class="MINFIN">
+            
+           
+                    <h3>Last news <a href="" title="">MinFin</a> </h3>
+               
+                   <script type="text/javascript">
+                   
+                   var newsfeed=new gfeedfetcher("example2", "example2class", "_new2")
+                   
+                    //Specify "label" plus URL to RSS feed
+                   
+                   newsfeed.addFeed("Minfin","https://minfin.com.ua/ua/data/rss/news.xml")
+                   
+                   newsfeed.displayoptions("datetime snippet") //show the specified additional fields
+                   
+                   newsfeed.setentrycontainer("p", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
+                   
+                   newsfeed.filterfeed(10, "date") //Show 8 entries, sort by date
+                   
+                   newsfeed.init() //Always call this last  
+                   
+                   </script>
+                </div>
     
         <div  class="NBU">
             
@@ -106,29 +128,7 @@
        
         </div>
 
-        <div  class="MINFIN">
-            
-           
-            <h3>Last news <a href="" title="">MinFin</a> </h3>
-       
-           <script type="text/javascript">
-           
-           var newsfeed=new gfeedfetcher("example2", "example2class", "_new2")
-           
-            //Specify "label" plus URL to RSS feed
-           
-           newsfeed.addFeed("Minfin","https://minfin.com.ua/ua/data/rss/news.xml")
-           
-           newsfeed.displayoptions("datetime snippet") //show the specified additional fields
-           
-           newsfeed.setentrycontainer("p", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
-           
-           newsfeed.filterfeed(10, "date") //Show 8 entries, sort by date
-           
-           newsfeed.init() //Always call this last  
-           
-           </script>
-        </div>
+        
        
      </div> 
 

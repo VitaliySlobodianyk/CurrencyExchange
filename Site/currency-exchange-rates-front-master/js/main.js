@@ -24,40 +24,15 @@ window.onresize = function() {
   Doing that much modification of Bootstrap also seemed a bit overkill, since you would probably not have used it in the first place in such a scenario
   */
 
-  menuToggle();
+  // menuToggle();
 
 };
 
 
 // This function runs at start and on window resize and changes the menu from dropdown to list or vice versa. See listener above.
-function menuToggle() {
-  if (window.getComputedStyle(document.getElementsByClassName('nav-drop-btn')[0]).getPropertyValue('display') == 'none') {
-    //if media query has activated to show hide the dropdown button
-
-    document.getElementById('contactMenu').className = "menu-list";
-    document.getElementById('dropdownToggle').className = "";
-  } else {
-    document.getElementById('contactMenu').className = "dropdown";
-    document.getElementById('dropdownToggle').className = "dropdown-menu";
-  }
-}
 
 
 window.onload = function() {
-
-  menuToggle();  //sets the menu classes right for display width
-
-
-  /*rewrite LinkedIn links if client language is set to prefer swedish */
-  if (navigator.language.substring(0, 2) == "sv") {
-    var els = Array.prototype.slice.call(document.getElementsByClassName('linkedin-link'));
-    els.forEach(function(el,i) {
-      els[i].setAttribute('href', 'https://www.linkedin.com/in/arnoldson/sv');
-    });
-  }
-
-
-
   /* get main data */
   $.when(
     $.ajax({
@@ -124,20 +99,35 @@ window.onload = function() {
     });
   });
   /* get main data ends */
-
-
   // Get the bitcoin spot price and print in our navbar
   $.getJSON("https://api.coinbase.com/v2/prices/BTC-USD/spot")
     .done(function(data) {
       eraseAllChildren(document.getElementById("bitcoin-price"));
       var price = data.data.amount;
       var t = document.createTextNode(price);
-      document.getElementById("bitcoin-price").appendChild(t);
+      var val= document.createTextNode(" USD");
+       document.getElementById("bitcoin-price").appendChild(t);
+       document.getElementById("bitcoin-price").appendChild(val);
     })
     .fail(function() {
       eraseAllChildren(document.getElementById("bitcoin-price"));
       var t = document.createTextNode("n/a");
-      document.getElementById("bitcoin-price").appendChild(t);
+       document.getElementById("bitcoin-price").appendChild(t);
+    });
+
+    $.getJSON("https://api.coinbase.com/v2/prices/BTC-UAH/spot")
+    .done(function(data) {
+      eraseAllChildren(document.getElementById("bitcoin-price_ua"));
+      var price = data.data.amount;
+      var t = document.createTextNode(price);
+      var val= document.createTextNode(" UAN");
+       document.getElementById("bitcoin-price_ua").appendChild(t);
+       document.getElementById("bitcoin-price_ua").appendChild(val);
+    })
+    .fail(function() {
+      eraseAllChildren(document.getElementById("bitcoin-price_ua"));
+      var t = document.createTextNode("n/a");
+       document.getElementById("bitcoin-price_ua").appendChild(t);
     });
 
 
