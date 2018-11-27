@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="author" content="Håkan K Arnoldson">
+
+  <title>Currency rates - Cross-rate table</title>
+  <meta name="description" content="Currency cross-rates tables and converter.">
+
+  <link rel="stylesheet" href="css/cross-rates.min.css" />
+
+</head>
+<body>
+  <script src="dependencies/accounting-js-open-exchange-rates/accounting.min.js"></script>
+  <script src="js/cross-rates.js"></script>
+
+
+  <div id="loading">
+    Loading table<span class="loading-dot">.</span><span class="loading-dot">.</span><span class="loading-dot">.</span>
+  </div>
+  <div id="loading-failed"></div>
+
+  <table id="theTable">
+    <caption>Exchange rates</caption>
+    <thead id="tHead">
+
+    </thead>
+    <tbody id="tBody">
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <td id="footercell">
+          Data from <a href="https://www.coinbase.com/" target="_blank">Coinbase</a>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <footer id="homelink">
+    <a href="index.html">Go back to the main page.</a>
+  </footer>
+
+</body>
+</html>
