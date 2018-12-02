@@ -1,11 +1,24 @@
 
 .struct{
     display:grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 7fr 1fr;
     grid-template-rows: auto;
 }
-
-
+*{
+    /* border: 4px dotted white; */
+}
+.news{
+    grid-column-start: 1;
+    grid-column-start: auto;
+}
+.weather{
+    position: absolute;
+    grid-column-start: 2;
+    grid-column-start: auto;
+    right: 5%;
+    top:112%
+   
+}
 .labelfield{ /*CSS for label field in general*/
     color:brown;
     font-size: 90%;
