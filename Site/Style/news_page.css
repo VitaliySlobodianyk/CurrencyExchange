@@ -1,3 +1,11 @@
+
+.struct{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+}
+
+
 .labelfield{ /*CSS for label field in general*/
     color:brown;
     font-size: 90%;
@@ -24,8 +32,10 @@
     width:70%;
     margin-bottom:30px;
     margin-left: 40px;
-    border: 4px dotted black;
-    background-color:rgba(128, 128, 128, 0.445);
+    border: 4px dotted white;
+    background-color:rgba(199, 193, 193, 0.445);
+    color: orange;
+    font-size: 20px;
    }
 
    .NBU div>p:hover, .MINFIN div>p:hover{
@@ -34,9 +44,9 @@
    }
    .NBU h3, .MINFIN h3{
     font-size: 30px;   
-    display: inline-block;
-       text-align: center;
-       margin-left: 100px;
+   
+    position: relative; 
+   
    }
     
     code{ /*CSS for insructions*/

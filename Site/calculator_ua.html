@@ -52,129 +52,25 @@
       </div>
 
       <main>
-        <div class="body">
-        <div class="c_body">
-          <div class="row vdivide">
-            <div class="col-5">
-                 <h1>Калькулятор валют</h1>
-              <form id="calculatorForm" action="#" method="post">
-                <label for="chooseCurrency">Виберіть свою валюту</label>
-                <select class="btn" id="currencySelect1" name="currency">
-                  <!-- Currencies options -->
-                  <option value="USD">USD</option>
-                  <option value="EUR">EUR</option>
-                  <option value="UAN">UAN</option>
-                  <option value="RUB">RUB</option>
-                  <option value="PLN">PLN</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
-                
-                <input type="button" value="⇆" id="swap" onclick="" >
-                  <select class="btn" id="currencySelect2" name="currency">
-                      <!-- Currencies options -->
-                      <option value="USD">USD</option>
-                      <option value="EUR">EUR</option>
-                      <option value="UAN">UAN</option>
-                      <option value="RUB">RUB</option>
-                      <option value="PLN">PLN</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                      <option value=""></option>
-                  </select>
-
-                <hr/>
-                <span id="which">Виберіть функцію:</span>
+          <div class="body">
+              <div class="calc">
                   
-                  <input type="radio" name="bidAsk" value="bid" id="bid">
-                  <label for="bid" class="bidask">Купівля</label>
-                  
-                  <input type="radio" name="bidAsk" value="ask" id="ask">
-                  <label for="ask" class="bidask">Продаж</label>
-                  
-                 
-                  <input type="button" value="Перевірити ціну" class="btn" id="chk_price">
-              </form>
-            </div>
-            <div id="calculator" class="col-7">
-              
-              <hr/>
-              <div class="inserted-currency">Виберіть свою валюту</div>
-              <form id="calculator" action="#" method="post" >
-                
-                <label for="chooseAmount" id="choose">Введіть кількість валюти</label>
-                <input type="number" min="0" step="1" name="amount" value=""  id="amount">
-                <hr/>
-
-                <output>
-                   <span id="res_sp">Результат:</span>  
-                  <input type="text" name="result" value="" placeholder="" id="res" >
-                </output>
-                <!-- <button id="exchange" class="btn" type="submit">Exchange</button> -->
-               <input type="reset" value="Очистити" class="form_reset">
-                <input type="submit" value="Обміняти" class="Ex_btn" >
-              </form>
-            </div>
-          </div>
-
-          <div style="display:none" class="row secondrow">
-            <div class="col">
-              <table style="display: none" id="bidTable" class="table table-hover table-responsive hidden-table">
-                <thead>
-                  <tr>
-                    <th>Sold</th>
-                    <th>Amount</th>
-                    <th>UAH</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Bid table -->
-                </tbody>
-              </table>
-            </div>
-            <div class="col">
-              <table style="display: none" id="askTable" class="table table-hover table-responsive hidden-table">
-                <thead>
-                  <tr>
-                    <th>Bought</th>
-                    <th>Amount</th>
-                    <th>UAH</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Bid table -->
-                </tbody>
-              </table>
-            </div>
-            <div class="text-center">
-              <button id="sum" class="btn" type="submit">Sum</button>
-            </div>
-            <div id="divSum" class="text-center">
-              <div class="total">
-                Your total sum will be here
+                <div class="name_c">
+                  <h2>
+                    Валютний калькулятор
+                  </h2>     
+                </div>
+                <a id="CA_valyutnyy-kalkulyator.html" title="Калькулятор обмінних курсів" target="_blank" href="https://uk.moneyratestoday.com/valyutnyy-kalkulyator.html">Калькулятор обмінних курсів</a>
+                <script>
+                (function(c){document.write('<span id="'+c+'"></span>');
+                r=false;s=document.createElement('script');
+                s.async=1;s.src='https://uk.moneyratestoday.com/js/outbox.js?t=2&calc='+c;
+                s.onload =s.onreadystatechange=function(){(!r&&(!this.readyState||this.readyState=='complete')&&(r=true))};
+                t=document.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);})('valyutnyy-kalkulyator.html');
+                </script>
               </div>
-            </div>
-          </div>
-
-          <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            <strong></strong>
-          </div>
-        </div>
-      </div>
+          
+                </div>
       </main>
       <div class="footer">
           <div class="adr"><span> <span class="sp2"> Adress:</span> State University of Telecommunications, Kyiv Solomenskaya st. b.7</span></div> 

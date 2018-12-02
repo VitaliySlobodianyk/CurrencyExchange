@@ -82,7 +82,7 @@
             <div  class="MINFIN">
             
            
-                    <h3>Last news <a href="" title="">MinFin</a> </h3>
+                    <h3>Last news <a href="https://www.bbc.com/news/business" title="bbc">BBC Financial</a> </h3>
                
                    <script type="text/javascript">
                    
@@ -90,45 +90,19 @@
                    
                     //Specify "label" plus URL to RSS feed
                    
-                   newsfeed.addFeed("Minfin","https://minfin.com.ua/ua/data/rss/news.xml")
+                   newsfeed.addFeed("BBC","http://feeds.bbci.co.uk/news/business/rss.xml#")
                    
                    newsfeed.displayoptions("datetime snippet") //show the specified additional fields
                    
                    newsfeed.setentrycontainer("p", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
                    
-                   newsfeed.filterfeed(10, "date") //Show 8 entries, sort by date
+                   newsfeed.filterfeed(20, "date") //Show 8 entries, sort by date
                    
                    newsfeed.init() //Always call this last  
                    
                    </script>
                 </div>
     
-        <div  class="NBU">
-            
-           
-            <h3>Last news <a href="" title="">NBU</a> </h3>
-       
-           <script type="text/javascript">
-           
-           var newsfeed1=new gfeedfetcher("example1", "example1class", "_new")
-           
-           newsfeed1.addFeed("NBU", "https://bank.gov.ua/rss?language=uk") //Specify "label" plus URL to RSS feed
-           
-           newsfeed1.displayoptions("datetime snippet") //show the specified additional fields
-           
-           newsfeed1.setentrycontainer("p", "feed") //Display each entry as a paragraph, and add a "pclass" class to each P
-           
-           newsfeed1.filterfeed(10, "date") //Show 8 entries, sort by date
-           
-           newsfeed1.init() //Always call this last  
-           
-           </script>
-       
-         
-       
-        </div>
-
-        
        
      </div> 
 

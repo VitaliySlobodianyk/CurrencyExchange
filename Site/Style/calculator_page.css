@@ -8,11 +8,33 @@
     margin-top: 70px;
     box-shadow: 3px 3px 3px black;
 }
-.body{
-    height: 1000px;
+.calc{
+    background-color: white;
+    width: 70%;
+    border: 3px double orange
+}
+.body{ 
     background-color: rgba(54, 53, 53, 0.185);
-    margin-top:0;
-    box-sizing: content-box;
+    /* margin-top:0;
+    box-sizing: content-box; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.name_c{
+    position:absolute;
+     top:80%; 
+     left:40%;
+}
+.name_c h2{
+    color:black;
+
+}
+.calc a{
+   position: relative;
+    z-index:-100;
 }
 .col-5 h1{
     text-align: center;

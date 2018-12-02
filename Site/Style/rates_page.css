@@ -1,3 +1,33 @@
 #main_nav{
     display: none !important;
 }
+
+
+.tabl{
+    background-color: white;
+    width: 70%;
+    border: 3px double orange
+}
+.body{ 
+    background-color: rgba(54, 53, 53, 0.185);
+    /* margin-top:0;
+    box-sizing: content-box; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.name_c{
+    position:absolute;
+     top:80%; 
+     left:40%;
+}
+.name_c h2{
+    color:black;
+
+}
+.tabl a{
+   position: relative;
+    z-index:-100;
+}
