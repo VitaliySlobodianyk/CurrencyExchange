@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C_Ex Map</title>
+
+    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+    <script src="Backend\map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=InitMap"></script>
+
+
+<link rel="stylesheet" href="Style/main_style.css">
+<link rel="stylesheet" href="Style/map_style.css">
+</head>
+<body>
+    <div class="head">
+        <img src="http://i.piccy.info/i9/e89771032febdb354d8fec5c5109e3c9/1542741508/261328/1282306/ce_logo.png" alt="logo" id="logo" > 
+        <h5 class="name">
+  <p>
+  Veni. Vidi.
+  <span>
+    Currency Exchange
+  </span>
+  &mdash; Exchangium. &mdash;
+</p>
+</h5>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <ul class="versions">
+                <li id="en"><a href="map_en.html">English version</a></li>
+                <li id="ru"><a href="map_ru.html">Русская версия</a></li>
+                <li id="ua"><a href="map_ua.html">Українська версія</a></li>
+              </ul> 
+        </div>
+        <div class="menu container topBotomBordersOut">
+        <nav>
+              
+                  <h2 id="wnav">Навігація по сайту</h2>
+                  <h3>Мапа</h3>
+              <ul class="pages">
+                  
+                  <li id="p2">
+                      <a href="CurrencyExchange_ua.html">Головна сторінка</a>
+                      
+                  </li>
+                  <li id="p3">
+                        <a href="news_ua.html">Новини </a>
+                  </li>
+                  <li id="p4">
+                        <a href="table_ua.html">Статистика валют</a>
+                  </li>
+                  <li id="p5">
+                    <a href="calculator_ua.html">Калькулятор валют</a>
+              </li>
+                  <li id="p6">
+                        <a href="about_us_ua.html">Про нас</a>
+                  </li>
+              </ul>
+             </nav>
+      </div>
+    
+    
+    
+    
+    <div class="mapbody">
+<!-- 1. Создаем элемент внутри которого у нас будет отображаться карта Google Maps -->
+<div id="map"></div>
+
+	
+
+<!-- 3. Подключаем библиотеку Google Maps Api, чтобы создать карту -->
+	<!-- Атрибуты async и defer - позволяют загружать этот скрипт асинхронно, вместе с загрузкой всей страницы  -->
+	<!-- В подключении библиотеки Google Maps Api в конце указан параметр callback, после  подключения и загрузки этого Api сработает функция initMap для отрисовки карты,  которую мы описали выше -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=InitMap"></script>
+    
+
+    </div>
+
+
+     <div class="footer">
+            <div class="adr"><span> <span class="sp2"> Adress:</span> State University of Telecommunications, Kyiv Solomenskaya st. b.7</span></div> 
+            <div class="cont"> <span class="a">Contacts:</span>
+                               <span class="a"><span class="sp2">Tel1.</span> (096)465-58-00</span> 
+                               <span class="a"><span class="sp2">Tel2.</span> (096)899-67-40</span> 
+                               <span class="a"><span class="sp2">E-mail:</span> Currency_exchange@gmail.com</span> 
+                               <span class="a"><span class="sp2">Facebook:</span> Currency_exchange</span>
+            </div>
+            <div class="info_f"> <span>Currency Exchange</span> All rights  reserved. Protected by C_Ex License.</div>
+    </div>
+           
+        
+</body>
+</html>

@@ -23,3 +23,50 @@
 	color: grey;
 	text-align: center;
  }
+ 
+ .dev
+ {
+ 	font-family: fantasy;
+ 	font-size: x-large;
+ 	color: orange;
+ 	display: block;
+ 	margin: 0 auto;
+ 	padding: 5px;
+ 	width: 50%;
+ 	margin: 0 auto;
+ 	margin-bottom: 10px;
+ 	border:2px solid grey;
+ }
+ #vitalik
+ {
+ 	width: 250px;
+ 	height: 250px;
+ }
+ #lera
+ {
+ 	width: 250px;
+ 	height: 280px;
+ }
+ #maxim
+ {
+ 	width: 280px;
+ 	height: 280px;
+ }
+ #igor
+ {
+ 	width: 290px;
+ 	height: 250px;
+ }
+ #roma
+ {
+ 	width: 280px;
+ 	height: 280px;
+ }
+ p
+ {
+ 	margin: 5%;
+ }
+ .contacts
+ {
+ 	margin-top: 5%;
+ }
